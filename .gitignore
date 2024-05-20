@@ -9,6 +9,13 @@ __pycache__/
 # virtual python env.
 tenv
 
+#terraform
+.terraform*
+.terraform/
+.terraform.lock*
+*.tfstate
+
+
 # Distribution / packaging
 .Python
 build/
