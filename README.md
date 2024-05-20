@@ -9,7 +9,7 @@ so that the infrastructure could be created and python application could be depl
 Infra: via terraform and triggered in jenkins pipeline with jenkinsfile
 Loadrunner > Target Group > EC2 (Python flask Application)
 
-There is a separate git repository for flask python..
+There is a separate git repository for flask python @ https://github.com/AnkurGuptaDhuri/13_PythonFlaskApplication_SQLite.git
 
 
 
