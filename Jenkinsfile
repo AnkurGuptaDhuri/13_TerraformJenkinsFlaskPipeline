@@ -28,13 +28,13 @@ pipeline {
         }
         stage('Stage3: Terraform Plan') {
             steps {
-                script {
-                    if (params.PLAN_TERRAFORM) {
+                
+                    
                         withCredentials([aws(accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'Student', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY')]) {
                             sh 'cd ./infra && terraform plan'
                         }
-                    }    
-                }
+                        //if (params.PLAN_TERRAFORM) {   }    
+                
             }
         }
         stage('Stage4: Terraform Apply') {
